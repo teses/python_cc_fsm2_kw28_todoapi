@@ -19,14 +19,6 @@ class TestToDoModels(unittest.TestCase):
 
     def test_todo_create_empty_title(self):
 
-        # try:
-        #     todo = ToDoCreate(
-        #         todo_title="",
-        #         todo_description="Hallo",
-        #     )
-        # except ValidationError as e:
-        #     print(e)
-
         # wenn ein Fehler kommt ist es richtig
         with self.assertRaises(ValidationError):
             todo = ToDoCreate(todo_title="", todo_description="Hallo")
