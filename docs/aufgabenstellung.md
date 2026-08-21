@@ -85,7 +85,19 @@ Erstellen Sie ein Use-Case-Diagramm.
 
 Mindestens folgende Anwendungsfälle sollen dargestellt werden:
 
-XXXXX HIER die Anwendungsfälle beschreiben XXXX
+* Todos-Liste anzeigen
+* Todo erstellen
+* Todo ändern
+* Todo löschen
+* Todo anzeigen
+
+
+* Tasks-Liste eines Todo anzeigen
+* Task erstellen
+* Task anzeigen
+* Task ändern
+* Task löschen
+* Task als erledigt markieren
 
 ### 4.2 UML-Klassendiagramm
 
@@ -113,5 +125,22 @@ Erstellen Sie ein Datenbankmodell für SQLite.
   - todo_title
   - ...
 
+
+## 6. Datenbank-Erstellung
+
+Erstellen Sie ein Python-Skript, das eine leere SQLite-Datenbank erzeugt.
+
+Das Skript soll:
+
+1. die SQLite-Datenbank anlegen,
+2. die Tabelle `todos` erstellen,
+3. die Tabelle `tasks` erstellen,
+4. Primärschlüssel definieren,
+5. Fremdschlüssel definieren,
+6. notwendige Constraints definieren.
+
+```text
+create_database.py
+```
 
 

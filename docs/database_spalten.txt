@@ -1,0 +1,20 @@
+# Datenbank Tabellen und Spaltennamen
+
+
+
+# todos
+todo_id INTEGER
+todo_title TEXT
+todo_description TEXT
+todo_created_at TEXT
+
+# tasks
+task_id INTEGER
+todo_id INTEGER
+task_title TEXT
+task_description TEXT
+task_status TEXT
+task_priority TEXT
+task_created_at  TEXT
+task_due_date TEXT
+
