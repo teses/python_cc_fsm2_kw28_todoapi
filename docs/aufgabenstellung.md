@@ -142,5 +142,64 @@ Das Skript soll:
 ```text
 create_database.py
 ```
+Das Skript soll mehrfach ausgeführt werden können, ohne Fehler zu verursachen.
+
+## 7. Projektstruktur
+
+Planen Sie eine sinnvolle Projektstruktur.
+
+``` 
+├── main.py
+├── database.py
+├── create_database.py
+├── requirements.txt
+├── README.txt
+├── models/
+│   ├── todo.py
+│   └── task.py
+│ 
+├── routers/
+│   ├── todo.py
+│   └── task.py
+│
+├── services/
+│   ├── todo.py
+│   └── task.py
+│
+└── tests/
+    ├── test_todos.py
+    └── test_tasks.py
+```
+
+| Verzeichnis | Inhalt                  |
+|-------------|-------------------------|
+| models      | pydantic Datenmodelle   |
+| routers     | api routen (controller) |
+| services    | Datenbankzugriff, SQL   |
+| tests       | tests                   |
+
+## 8. Pydantic-Modelle
+
+Für die API sollen Pydantic-Modelle verwendet werden.
+
+Es sollen mindestens Modelle für folgende Aufgaben erstellt werden:
+
+* Erstellen eines Todos
+* Ändern eines Todos
+* Rückgabe eines Todos
+* Erstellen eines Tasks
+* Ändern eines Tasks
+* Rückgabe eines Tasks
+
+Dabei sollen die Daten validiert werden.
+
+Validierungen:
+
+* Titel darf nicht leer sein.
+* Titel besitzt eine maximale Länge.
+* Status darf nur definierte Werte enthalten.
+* Priorität darf nur definierte Werte enthalten.
+* Pflichtfelder müssen vorhanden sein.
+* ...weitere Sinvolle Validierungen
 
 

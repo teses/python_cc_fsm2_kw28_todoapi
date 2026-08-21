@@ -9,7 +9,9 @@
    - Spalten
    - Kardinalität
    - Datentypen
-5. Planung der Endpunkte
+
 
 ---- 
-
+1. Pydantic Datenmodelle erstellen
+2. Tests für die Datenmodelle
+3. Planung der Endpunkte
